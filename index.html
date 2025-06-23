@@ -22,7 +22,13 @@
   <header id="hero">
     <div class="container hero-content">
       <h1>E.SATHYANESAR</h1>
-      <p>Computer Science Engineering Student | Web Development Enthusiast | Passionate About UI/UX & Web Design</p>
+      <h1 class="role">
+        <span>
+          <span>COMPUTER SCIENCE ENGINEER</span>
+          <span>WEB DEVELOPER</span>
+          <span>UI/UX DESIGN LEARNER</span>
+        </span>
+      </h1>
       <img class="profile-img" src="images/Sathya31.jpg" alt="E. Sathyanesar" width="200" height="200" />
     </div>
   </header>
@@ -30,13 +36,13 @@
   <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#achievements">Certificate</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="E_Sathyanesar_Resume.pdf">Resume</a></li>
+       <li data-tooltip="About Me"><a href="#about"><i class="fa-regular fa-user"></i></a></li>
+      <li data-tooltip="Education"><a href="#education"><i class="fa-solid fa-user-graduate"></i></a></li>
+      <li data-tooltip="Skills"><a href="#skills"><i class="fa-solid fa-head-side-virus"></i></a></li>
+      <li data-tooltip="Certificates"><a href="#achievements"><i class="fa-solid fa-certificate"></i></a></li>
+      <li data-tooltip="Projects"><a href="#projects"><i class="fa-solid fa-list-check"></i></a></li>
+      <li data-tooltip="Contact"><a href="#contact"><i class="fa-solid fa-address-card"></i></a></li>
+      <li data-tooltip="Resume"><a href="E_Sathyanesar_Resume.pdf" download="E_Sathyanesar_Resume.pdf"><i class="fa-solid fa-file"></i></a></li>
     </ul>
   </nav>
 
@@ -121,12 +127,12 @@
           <span>30%</span>
         </div>
         <div class="skill">
-          <img src="images/c-.png" alt="C++" width="50" height="50" />
-          <h3>C++</h3>
+          <img src="images/C.png" alt="C" width="50" height="50" />
+          <h3>C</h3>
           <div class="progress-bar">
-            <div class="progress" style="width: 40%;"></div>
+            <div class="progress" style="width: 30%;"></div>
           </div>
-          <span>40%</span>
+          <span>30%</span>
         </div>
         <div class="skill">
           <img src="images/python.png" alt="Python" width="50" height="50" />
@@ -145,7 +151,82 @@
     <div class="container">
       <h2>Certificate</h2>
       <div class="achievements-container">
-        <!-- Coursera Certificates -->
+
+<!-- IBM SkillsBuilt Certificate -->
+        <div class="achievement-card">
+          <div class="achievement-front">
+            <img src="images/Use Generative AI for Software Development.png" alt="IBM" width="100" height="50" />
+            <h3>Use Generative AI for Software Development</h3>
+            
+          </div>
+          <div class="achievement-back">
+            <h3>Use Generative AI for Software Development</h3>
+            <p>Completed on IBM SkillsBuilt</p>
+            <a href="https://skills.yourlearning.ibm.com/certificate/share/3bfd5fda47ewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI0ODg1NTc1UkVHIiwKICAib2JqZWN0SWQiIDogIk1ETC01MDQiCn0a01008e072-10" target="_blank" rel="noopener noreferrer" class="achievement-link">
+              <i class="fas fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+<!-- Deloitte Certificate -->
+        <div class="achievement-card">
+          <div class="achievement-front">
+            <img src="images/deloitte.png" alt="Deloitte" width="100" height="50" />
+            <h3>Data Analytics Job Simulation</h3>
+            
+          </div>
+          <div class="achievement-back">
+            <h3>Data Analytics Job Simulation</h3>
+            <p>Completed on Deloitte</p>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Sz9FDpqPdWC6JkXAK_1749571516082_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="achievement-link">
+              <i class="fas fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+<!-- Accenture Certificate -->
+        <div class="achievement-card">
+          <div class="achievement-front">
+            <img src="images/accenture.png" alt="Accenture" width="100" height="50" />
+            <h3>Software Engineering Job Simulation</h3>
+
+          </div>
+          <div class="achievement-back">
+            <h3>Software Engineering Job Simulation</h3>
+            <p>Completed on Forage(Accenture)</p>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_Sz9FDpqPdWC6JkXAK_1749818363483_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="achievement-link">
+              <i class="fas fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+<!-- TATA Certificates -->
+        <div class="achievement-card">
+          <div class="achievement-front">
+            <img src="images/TATA.png" alt="Tata" width="100" height="50" />
+            <h3>GenAI Powered Data Analytics Job Simulation</h3>
+          </div>
+          <div class="achievement-back">
+            <p>Completed GenAI Powered Data Analytics Job Simulation on Tata Consultancy Services By Forage</p>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_Sz9FDpqPdWC6JkXAK_1749814921367_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="achievement-link">
+              <i class="fas fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-front">
+            <img src="images/TATA.png" alt="Tata" width="100" height="50" />
+            <h3>Cybersecurity Analyst Job Simulation</h3>
+          </div>
+          <div class="achievement-back">
+            <p>Completed Cybersecurity Analyst Job Simulation on Tata Consultancy Services By Forage</p>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_Sz9FDpqPdWC6JkXAK_1749811164036_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="achievement-link">
+              <i class="fas fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+        
+<!-- Coursera Certificates -->
         <div class="achievement-card">
           <div class="achievement-front">
             <img src="images/coursera.svg" alt="Coursera" width="100" height="50" />
@@ -189,8 +270,7 @@
         <div class="achievement-card">
           <div class="achievement-front">
             <img src="images/skillrack.png" alt="SkillRack" width="100" height="50" />
-            <h3>SkillRack Certification</h3>
-            <p>Data Structure - C</p>
+            <h3>Data Structure - C</h3>
           </div>
           <div class="achievement-back">
             <p>Completed Data Structure - C on SkillRack platform</p>
@@ -205,7 +285,7 @@
           <div class="achievement-front">
             <img src="images/Simplilearn.avif" alt="Simplilearn" width="100" height="50" />
             <h3>Introduction to the Sorting Algorithms</h3>
-            <p>Simplilearn</p>
+            
           </div>
           <div class="achievement-back">
             <p>Completed Introduction to the Sorting Algorithms on Simplilearn</p>
@@ -219,7 +299,7 @@
           <div class="achievement-front">
             <img src="images/Simplilearn.avif" alt="Simplilearn" width="100" height="50" />
             <h3>Introduction to Cyber Security</h3>
-            <p>Simplilearn</p>
+            
           </div>
           <div class="achievement-back">
             <h3>Introduction to Cyber Security</h3>
@@ -230,20 +310,6 @@
           </div>
         </div>
 
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/deloitte.png" alt="Deloitte" width="100" height="50" />
-            <h3>Data Analytics Job Simulation</h3>
-            <p>Deloitte</p>
-          </div>
-          <div class="achievement-back">
-            <h3>Data Analytics Job Simulation</h3>
-            <p>Completed on Deloitte</p>
-            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Sz9FDpqPdWC6JkXAK_1749571516082_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </section>
