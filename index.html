@@ -410,25 +410,22 @@
             </a>
           </div>
         </div>
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+  <input type="hidden" name="access_key" value="dc19421d-fa76-4423-b5e1-5aeb6d755352">
 
-  
-    <input type="hidden" name="access_key" value="dc19421d-fa76-4423-b5e1-5aeb6d755352">
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="Your e-mail Id" required>
+  <textarea name="message" placeholder="Message here!!" required></textarea>
 
-    
-    <input type="text" placeholder="Your name" required>
-    <input type="email" placeholder="Your e-mail Id" name="email" required>
-    <textarea name="message" placeholder="Message here!!" required></textarea>
+  <!-- Honeypot Spam Protection -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-    <!-- Honeypot Spam Protection -->
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+  <input type="hidden" name="redirect" value="https://sathya3103.github.io/portfolio/thankyou.html">
 
-    <!-- Custom Confirmation / Success Page -->
-    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-
-    <button type="submit">Submit Form</button>
-
+  <button type="submit">Submit Form</button>
 </form>
+
+<div id="result"></div>
       </div>
     </div>
   </section>

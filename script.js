@@ -1,19 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Smooth scrolling for nav links
   const handleNavClick = (e) => {
     e.preventDefault();
     const targetId = e.currentTarget.getAttribute('href');
     const targetElement = document.querySelector(targetId);
-    
+
     if (targetElement) {
       const navbarHeight = document.querySelector('nav').offsetHeight;
       const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-      
+
       window.scrollTo({
         top: targetPosition,
         behavior: 'smooth'
       });
 
-      // Update URL without page reload
+      // Update URL without reload
       history.pushState(null, null, targetId);
     }
   };
@@ -22,12 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
     anchor.addEventListener('click', handleNavClick);
   });
 
-
+  // Animate progress bars on intersection
   const animateProgressBars = (entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const progressBars = entry.target.querySelectorAll('.progress');
-        
+
         progressBars.forEach(bar => {
           const targetWidth = bar.getAttribute('data-width') || bar.style.width;
           bar.style.transition = 'width 1.5s ease-in-out';
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const skillsSection = document.getElementById('skills');
   if (skillsSection) skillsObserver.observe(skillsSection);
 
+  // Sticky nav on scroll
   const nav = document.querySelector('nav');
   if (nav) {
     const navScrollHandler = () => {
@@ -55,61 +57,69 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.classList.toggle('scrolled', shouldSticky);
     };
 
-    // Use passive event listener for better scrolling performance
     window.addEventListener('scroll', navScrollHandler, { passive: true });
 
-    // Initialize state
+    // Initialize sticky state
     navScrollHandler();
   }
 
+  // Card hover effects
   document.querySelectorAll('.project-card, .achievement-card').forEach(card => {
     card.addEventListener('mouseenter', () => {
       card.style.transform = 'translateY(-5px)';
       card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
     });
-    
+
     card.addEventListener('mouseleave', () => {
       card.style.transform = '';
       card.style.boxShadow = '';
     });
   });
-});
 
-const form = document.getElementById('contact-form');
-const result = document.getElementById('result');
+  // Form submission handler
+  const form = document.getElementById('contact-form');
+  const result = document.getElementById('result');
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const formData = new FormData(contact-form);
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
-  result.innerHTML = "Please wait..."
+  if (form && result) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
 
-    fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            let json = await response.json();
-            if (response.status == 200) {
-                result.innerHTML = "Form submitted successfully";
-            } else {
-                console.log(response);
-                result.innerHTML = json.message;
-            }
-        })
-        .catch(error => {
-            console.log(error);
-            result.innerHTML = "Something went wrong!";
-        })
-        .then(function() {
-            form.reset();
-            setTimeout(() => {
-                result.style.display = "none";
-            }, 3000);
-        });
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      result.style.display = 'block';
+      result.innerHTML = "Please wait...";
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status === 200) {
+          result.innerHTML = "Form submitted successfully";
+        } else {
+          result.innerHTML = json.message || "Submission failed";
+        }
+      })
+      .catch(error => {
+        console.error(error);
+        result.innerHTML = "Something went wrong!";
+      })
+      .finally(() => {
+        form.reset();
+        setTimeout(() => {
+          result.style.display = "none";
+        }, 3000);
+      });
+    });
+  } else {
+    if (!form) console.error("Form element with id 'contact-form' not found.");
+    if (!result) console.error("Result element with id 'result' not found.");
+  }
 });
