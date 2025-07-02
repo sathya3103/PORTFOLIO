@@ -298,7 +298,7 @@ nav li:hover::after {
 /* Skills Section */
 #skills {
   background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
-  height: 100vh;
+  height: 100%;
 }
 
 .skills-container {
