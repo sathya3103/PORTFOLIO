@@ -23,27 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     anchor.addEventListener('click', handleNavClick);
   });
 
-  // Animate progress bars on intersection
-  const animateProgressBars = (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const progressBars = entry.target.querySelectorAll('.progress');
-
-        progressBars.forEach(bar => {
-          const targetWidth = bar.getAttribute('data-width') || bar.style.width;
-          bar.style.transition = 'width 1.5s ease-in-out';
-          bar.style.width = targetWidth;
-        });
-
-        observer.unobserve(entry.target);
-      }
-    });
-  };
-
-  const skillsObserver = new IntersectionObserver(animateProgressBars, {
-    threshold: 0.2,
-    rootMargin: '0px 0px -50px 0px'
-  });
 
   const skillsSection = document.getElementById('skills');
   if (skillsSection) skillsObserver.observe(skillsSection);
