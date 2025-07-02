@@ -1,8 +1,8 @@
 /* CSS Variables for easy theming */
 :root {
-  --primary-color: #49225B;
-  --primary-gradient-start: #6E3482;
-  --primary-gradient-end: #E7DBEF;
+  --primary-color: #49225b;
+  --primary-gradient-start: #6e3482;
+  --primary-gradient-end: #e7dbef;
   --background-dark: #121212;
   --nav-bg: rgba(0, 0, 0, 0.2);
   --text-light: #e0e0e0;
@@ -10,7 +10,6 @@
   --border-dark: #333;
   --lavender-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
-
 
 /* General Styles */
 * {
@@ -27,7 +26,6 @@ html {
 body {
   color: var(--text-light);
   line-height: 1.6;
-  
 }
 
 .container {
@@ -69,7 +67,11 @@ h2::after {
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  background: linear-gradient(
+    135deg,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
   background-size: cover;
 }
 
@@ -120,7 +122,6 @@ h1 > span > span {
   display: block;
   animation: animateWords 7s infinite ease;
   white-space: nowrap;
-  
 }
 
 @keyframes animateWords {
@@ -140,10 +141,9 @@ h1 > span > span {
 
 @media (max-width: 480px) {
   h1 > span > span {
-    font-size: 1.60rem;
+    font-size: 1.6rem;
   }
 }
-
 
 /* Navbar */
 nav {
@@ -198,7 +198,11 @@ nav li:hover::after {
 
 /* About Section */
 #about {
-  background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  background: linear-gradient(
+    135deg,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
   height: 100vh;
 }
 .about-content {
@@ -222,7 +226,11 @@ nav li:hover::after {
 
 /* Education Section - Timeline */
 #education {
-  background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  background: linear-gradient(
+    135deg,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
   height: 100vh;
 }
 
@@ -297,7 +305,11 @@ nav li:hover::after {
 
 /* Skills Section */
 #skills {
-  background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  background: linear-gradient(
+    135deg,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
   height: 100vh;
 }
 
@@ -335,7 +347,7 @@ nav li:hover::after {
 .skill h3 {
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  color: var(--primary-color);;
+  color: var(--primary-color);
 }
 
 .progress-bar {
@@ -357,12 +369,16 @@ nav li:hover::after {
 .skill span {
   font-weight: bold;
   font-size: 0.9rem;
-  color: #49225B;
+  color: #49225b;
 }
 
 /* Achievements Section */
 #achievements {
-  background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  background: linear-gradient(
+    135deg,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
   height: 100vh;
 }
 .achievements-container {
@@ -388,7 +404,6 @@ nav li:hover::after {
 .achievements-container::-webkit-scrollbar {
   display: none;
 }
-
 
 .achievement-card:hover .achievement-front {
   transform: rotateY(180deg);
@@ -479,7 +494,11 @@ nav li:hover::after {
 
 /* Projects Section */
 #projects {
-  background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  background: linear-gradient(
+    135deg,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
   height: 100vh;
 }
 
@@ -501,7 +520,6 @@ nav li:hover::after {
 
 .projects-container::-webkit-scrollbar {
   height: 8px;
-  
 }
 
 .project-card:hover .project-front {
@@ -512,8 +530,8 @@ nav li:hover::after {
   transform: rotateY(0deg);
 }
 
-.projects-container{
-   scrollbar-width: thin;
+.projects-container {
+  scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 
@@ -539,7 +557,7 @@ nav li:hover::after {
   transform: rotateY(0deg);
 }
 
-.project-front h3{
+.project-front h3 {
   margin-bottom: 1rem;
   color: var(--primary-color);
   white-space: normal;
@@ -593,7 +611,11 @@ nav li:hover::after {
 
 /* Contact Section */
 #contact {
-  background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  background: linear-gradient(
+    135deg,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
 }
 
 .contact-container {
