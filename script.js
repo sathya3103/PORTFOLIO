@@ -23,10 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     anchor.addEventListener('click', handleNavClick);
   });
 
-
-  const skillsSection = document.getElementById('skills');
-  if (skillsSection) skillsObserver.observe(skillsSection);
-
   // Sticky nav on scroll
   const nav = document.querySelector('nav');
   if (nav) {

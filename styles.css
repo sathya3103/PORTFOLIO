@@ -344,7 +344,7 @@ nav li:hover::after {
 .skills-category {
   background: transparent;
   border: none;
-  padding: 2rem 1rem; /* balanced padding */
+  padding: 1rem 1rem; 
   border-radius: 0;
 }
 
@@ -355,7 +355,7 @@ nav li:hover::after {
   font-size: 1.2rem;
   color: var(--highlight);
   margin-bottom: 1rem;
-  text-align: center;
+  text-align:center;
 }
 
 /* Stack skills vertically inside each category */
@@ -392,11 +392,12 @@ nav li:hover::after {
   flex: 1;
 }
 
-/* Desktop: align category title with logos */
-@media (min-width: 900px) {
-  .skills-category h3 {
-    padding-left: calc(32px + 0.75rem);
-  }
+.category-title , .skills-container{
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 9px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive: 2 columns and reset padding on smaller screens */
