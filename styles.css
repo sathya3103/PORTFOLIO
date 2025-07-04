@@ -35,7 +35,7 @@ body::after {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.634);
+  background: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
@@ -54,6 +54,7 @@ html {
 body {
   color: var(--text-light);
   line-height: 1.6;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .container {
@@ -110,7 +111,7 @@ h2::after {
 
 .hero-content p {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .profile-img {
@@ -142,7 +143,7 @@ h1 > span {
 }
 h1 > span > span {
   display: block;
-  animation: animateWords 7s infinite ease;
+  animation: animateWords 10s infinite ease;
   white-space: nowrap;
 }
 
@@ -150,11 +151,14 @@ h1 > span > span {
   0% {
     transform: translateY(0);
   }
-  33% {
+  30% {
     transform: translateY(-100%);
   }
-  66% {
+  60% {
     transform: translateY(-200%);
+  }
+  80% {
+    transform: translateY(-300%);
   }
   100% {
     transform: translateY(0);
@@ -238,6 +242,16 @@ nav li:hover::after {
   padding: 3rem;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+strong{
+  color: #764ba2;
+}
+
+p{
+  text-align:start;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 /* Education Section - Timeline */
