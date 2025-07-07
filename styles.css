@@ -730,7 +730,7 @@ p{
 
 /* Footer */
 footer {
-  text-align: center;
+  justify-items: center;
   padding: 1.5rem;
   background: var(--nav-bg);
   color: wheat;
