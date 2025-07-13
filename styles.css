@@ -719,6 +719,11 @@ p {
   gap: 0.5rem;
 }
 
+/* Leetcode Stats */
+.leetcode-stats {
+  text-align: center;
+}
+
 /* Contact Section */
 
 .contact-container {
