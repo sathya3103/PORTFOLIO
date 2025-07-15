@@ -728,29 +728,6 @@ p {
   gap: 0.5rem;
 }
 
-/* Leetcode Stats */
-.stats-section {
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.leet-badge {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-@media (max-width: 480px) {
-  .stats-section {
-    padding: 15px;
-    font-size: 14px;
-  }
-}
-
-
 /* Contact Section */
 
 .contact-container {

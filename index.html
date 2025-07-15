@@ -1,693 +1,917 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E. Sathyanesar - Portfolio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E. Sathyanesar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta
+      name="description"
+      content="Portfolio of E. Sathyanesar, Computer Science Engineering student with projects in web development and Java."
+    />
+    <meta
+      name="keywords"
+      content="Sathyanesar, portfolio, web developer, Java projects, train reservation, sorting game, study tracker"
+    />
+    <meta name="author" content="E. Sathyanesar" />
 
-  <meta name="description"
-    content="Portfolio of E. Sathyanesar, Computer Science Engineering student with projects in web development and Java." />
-  <meta name="keywords"
-    content="Sathyanesar, portfolio, web developer, Java projects, train reservation, sorting game, study tracker" />
-  <meta name="author" content="E. Sathyanesar" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="E. Sathyanesar - Portfolio" />
+    <meta
+      property="og:description"
+      content="Computer Science student portfolio showcasing projects in Java, web development, and UI/UX."
+    />
+    <meta
+      property="og:image"
+      content="https://sathya3103.github.io/PORTFOLIO/images/sathyanesar.jpg"
+    />
+    <meta property="og:url" content="https://sathya3103.github.io/PORTFOLIO/" />
+    <meta property="og:type" content="website" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="E. Sathyanesar - Portfolio" />
-  <meta property="og:description"
-    content="Computer Science student portfolio showcasing projects in Java, web development, and UI/UX." />
-  <meta property="og:image" content="https://sathya3103.github.io/PORTFOLIO/images/sathyanesar.jpg" />
-  <meta property="og:url" content="https://sathya3103.github.io/PORTFOLIO/" />
-  <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="E. Sathyanesar - Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Explore Sathyanesar’s web projects, resume, and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sathya3103.github.io/PORTFOLIO/images/profile.jpg"
+    />
+  </head>
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="E. Sathyanesar - Portfolio" />
-  <meta name="twitter:description" content="Explore Sathyanesar’s web projects, resume, and more." />
-  <meta name="twitter:image" content="https://sathya3103.github.io/PORTFOLIO/images/profile.jpg" />
-</head>
-
-<body>
-
-  <!-- Particles Background -->
-  <div class="particles-background">
-    <div id="particles-js"></div>
-  </div>
-
-  <!-- Header Section -->
-  <header id="hero">
-    <div class="container hero-content">
-      <h1>E.SATHYANESAR</h1>
-      <h1 class="role">
-        <span>
-          <span>COMPUTER SCIENCE ENGINEER</span>
-          <span>WEB DEVELOPER</span>
-          <span>PROMPT ENGINEER</span>
-          <span>UI UX DESIGN LEARNER</span>
-        </span>
-      </h1>
-      <img class="profile-img" src="images/sathyanesar.jpg" alt="E. Sathyanesar" width="200" height="200" />
-      <div class="action-buttons">
-        <a href="E_Sathyanesar_Resume.pdf" download="E_Sathyanesar_Resume.pdf" class="btn btn-primary">
-          <i class="fas fa-file-alt"></i> View Resume
-        </a>
-        <a href="#contact" class="btn btn-outline">
-          <i class="fas fa-paper-plane"></i> Contact Me
-        </a>
-      </div>
+  <body>
+    <!-- Particles Background -->
+    <div class="particles-background">
+      <div id="particles-js"></div>
     </div>
-  </header>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li data-tooltip="About Me">
-        <a href="#about"><i class="fa-regular fa-user"></i></a>
-      </li>
-      <li data-tooltip="Education">
-        <a href="#education"><i class="fa-solid fa-user-graduate"></i></a>
-      </li>
-      <li data-tooltip="Skills">
-        <a href="#skills"><i class="fa-solid fa-head-side-virus"></i></a>
-      </li>
-      <li data-tooltip="Certificates">
-        <a href="#achievements"><i class="fa-solid fa-certificate"></i></a>
-      </li>
-      <li data-tooltip="Projects">
-        <a href="#projects"><i class="fa-solid fa-list-check"></i></a>
-      </li>
-      <li data-tooltip="Contact">
-        <a href="#contact"><i class="fa-solid fa-address-card"></i></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            I’m E. Sathyanesar from Chennai, pursuing a B.E. in Computer
-            Science at Agni College of Technology. I’m passionate about
-            technology, with a focus on problem-solving, software development,
-            and applying core CS concepts.
-          </p>
-
-          <p>
-            I began web development with
-            <strong>HTML, CSS, and JavaScript</strong>, building responsive
-            projects like a Portfolio, Study Tracker, and Sorting Game. I
-            earned the
-            <strong>Responsive Web Design Certification</strong> from
-            FreeCodeCamp, gaining skills in modern, mobile-first design.
-          </p>
-
-          <p>
-            I expanded my skills by developing a Train Reservation System
-            using
-            <strong>Java, JavaFX, and MySQL</strong>, gaining backend and
-            database integration experience.
-          </p>
-
-          <p>
-            I also completed IBM’s
-            <strong>Prompt Engineering for Everyone</strong> course via
-            Cognitive Class AI, learning to craft effective prompts for large
-            language models—a vital skill in today’s AI-powered workflows.
-          </p>
+    <!-- Header Section -->
+    <header id="hero">
+      <div class="container hero-content">
+        <h1>E.SATHYANESAR</h1>
+        <h1 class="role">
+          <span>
+            <span>COMPUTER SCIENCE ENGINEER</span>
+            <span>WEB DEVELOPER</span>
+            <span>PROMPT ENGINEER</span>
+            <span>UI UX DESIGN LEARNER</span>
+          </span>
+        </h1>
+        <img
+          class="profile-img"
+          src="images/sathyanesar.jpg"
+          alt="E. Sathyanesar"
+          width="200"
+          height="200"
+        />
+        <div class="action-buttons">
+          <a
+            href="E_Sathyanesar_Resume.pdf"
+            download="E_Sathyanesar_Resume.pdf"
+            class="btn btn-primary"
+          >
+            <i class="fas fa-file-alt"></i> View Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Education Section -->
-  <section id="education">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>Bachelor of Engineering - Computer Science</h3>
-            <p class="date">2023 - Present</p>
-            <p>Agni College of Technology, Chennai</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>Higher Secondary Education</h3>
-            <p class="date">2009 - 2023</p>
-            <p>Brotherhood Matric Hr. Sec. School, Chennai</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li data-tooltip="About Me">
+          <a href="#about"><i class="fa-regular fa-user"></i></a>
+        </li>
+        <li data-tooltip="Education">
+          <a href="#education"><i class="fa-solid fa-user-graduate"></i></a>
+        </li>
+        <li data-tooltip="Skills">
+          <a href="#skills"><i class="fa-solid fa-head-side-virus"></i></a>
+        </li>
+        <li data-tooltip="Certificates">
+          <a href="#achievements"><i class="fa-solid fa-certificate"></i></a>
+        </li>
+        <li data-tooltip="Projects">
+          <a href="#projects"><i class="fa-solid fa-list-check"></i></a>
+        </li>
+        <li data-tooltip="Contact">
+          <a href="#contact"><i class="fa-solid fa-address-card"></i></a>
+        </li>
+      </ul>
+    </nav>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>Technical Skills</h2>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I’m E. Sathyanesar from Chennai, pursuing a B.E. in Computer
+              Science at Agni College of Technology. I’m passionate about
+              technology, with a focus on problem-solving, software development,
+              and applying core CS concepts.
+            </p>
 
-      <!-- Front-end Skills -->
-      <div class="skills-category">
-        <h3 class="category-title">Front-end</h3>
-        <div class="skills-container">
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-            <h4>HTML5</h4>
-          </div>
+            <p>
+              I began web development with
+              <strong>HTML, CSS, and JavaScript</strong>, building responsive
+              projects like a Portfolio, Study Tracker, and Sorting Game. I
+              earned the
+              <strong>Responsive Web Design Certification</strong> from
+              FreeCodeCamp, gaining skills in modern, mobile-first design.
+            </p>
 
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-            <h4>CSS3</h4>
-          </div>
+            <p>
+              I expanded my skills by developing a Train Reservation System
+              using
+              <strong>Java, JavaFX, and MySQL</strong>, gaining backend and
+              database integration experience.
+            </p>
 
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="JavaScript" />
-            <h4>JavaScript</h4>
+            <p>
+              I also completed IBM’s
+              <strong>Prompt Engineering for Everyone</strong> course via
+              Cognitive Class AI, learning to craft effective prompts for large
+              language models—a vital skill in today’s AI-powered workflows.
+            </p>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Backend Skills -->
-      <div class="skills-category">
-        <h3 class="category-title">Backend</h3>
-        <div class="skills-container">
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-            <h4>MySQL</h4>
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Bachelor of Engineering - Computer Science</h3>
+              <p class="date">2023 - Present</p>
+              <p>Agni College of Technology, Chennai</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Higher Secondary Education</h3>
+              <p class="date">2009 - 2023</p>
+              <p>Brotherhood Matric Hr. Sec. School, Chennai</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Programming Languages -->
-      <div class="skills-category">
-        <h3 class="category-title">Programming Languages</h3>
-        <div class="skills-container">
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-            <h4>Python</h4>
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>Technical Skills</h2>
+
+        <!-- Front-end Skills -->
+        <div class="skills-category">
+          <h3 class="category-title">Front-end</h3>
+          <div class="skills-container">
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"
+              />
+              <h4>HTML5</h4>
+            </div>
+
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3"
+              />
+              <h4>CSS3</h4>
+            </div>
+
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+              />
+              <h4>JavaScript</h4>
+            </div>
           </div>
+        </div>
 
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Language" />
-            <h4>C</h4>
+        <!-- Backend Skills -->
+        <div class="skills-category">
+          <h3 class="category-title">Backend</h3>
+          <div class="skills-container">
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+              />
+              <h4>MySQL</h4>
+            </div>
           </div>
+        </div>
 
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-            <h4>Java</h4>
+        <!-- Programming Languages -->
+        <div class="skills-category">
+          <h3 class="category-title">Programming Languages</h3>
+          <div class="skills-container">
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+              />
+              <h4>Python</h4>
+            </div>
+
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                alt="C Language"
+              />
+              <h4>C</h4>
+            </div>
+
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+              />
+              <h4>Java</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-category">
+          <h3 class="category-title">Tools</h3>
+          <div class="skills-container">
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
+                style="filter: brightness(200%) invert(100%)"
+              />
+              <h4>GitHub</h4>
+            </div>
+
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                alt="VS Code"
+              />
+              <h4>VS Code</h4>
+            </div>
+
+            <div class="skill">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                alt="VS Code"
+              />
+              <h4>Figma</h4>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Tools -->
-      <div class="skills-category">
-        <h3 class="category-title">Tools</h3>
-        <div class="skills-container">
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
-              style="filter: brightness(200%) invert(100%)" />
-            <h4>GitHub</h4>
-          </div>
-
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
-            <h4>VS Code</h4>
-          </div>
-
-          <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="VS Code" />
-            <h4>Figma</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Achievements Section -->
-  <section id="achievements">
-    <div class="container">
-      <h2>Certificate</h2>
-      <div class="achievements-container">
-        <!-- IBM SkillsBuilt Certificate -->
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/IBM.png" alt="IBM" width="100" height="50" />
-            <h3>Use Generative AI for Software Development</h3>
-          </div>
-          <div class="achievement-back">
-            <h3>Use Generative AI for Software Development</h3>
-            <p>Completed on IBM SkillsBuilt</p>
-            <a href="https://skills.yourlearning.ibm.com/certificate/share/3bfd5fda47ewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI0ODg1NTc1UkVHIiwKICAib2JqZWN0SWQiIDogIk1ETC01MDQiCn0a01008e072-10"
-              target="_blank" rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/IBM.png" alt="IBM" width="100" height="50" />
-            <h3>Data Analysis with Python</h3>
-          </div>
-          <div class="achievement-back">
-            <h3>Data Analysis with Python</h3>
-            <p>Completed on IBM via cognitiveclass.ai</p>
-            <a href="https://courses.cognitiveclass.ai/certificates/b601331c2a104b919e7e386880173f79" target="_blank"
-              rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/IBM.png" alt="IBM" width="100" height="50" />
-            <h3>Prompt Engineering for Everyone</h3>
-          </div>
-          <div class="achievement-back">
-            <h3>Prompt Engineering for Everyone</h3>
-            <p>Completed on IBM via cognitiveclass.ai</p>
-            <a href="https://courses.cognitiveclass.ai/certificates/8d71eb31afd745d79f3601f380740493" target="_blank"
-              rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <!-- Deloitte Certificate -->
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/deloitte.png" alt="Deloitte" width="100" height="50" />
-            <h3>Data Analytics Job Simulation</h3>
-          </div>
-          <div class="achievement-back">
-            <h3>Data Analytics Job Simulation</h3>
-            <p>Completed on Deloitte</p>
-            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Sz9FDpqPdWC6JkXAK_1749571516082_completion_certificate.pdf"
-              target="_blank" rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-        <!-- Accenture Certificate -->
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="https://cdn.simpleicons.org/accenture" alt="Accenture Logo" width="32" height="32" />
-            <h3>Software Engineering Job Simulation</h3>
-          </div>
-          <div class="achievement-back">
-            <h3>Software Engineering Job Simulation</h3>
-            <p>Completed on Forage(Accenture)</p>
-            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_Sz9FDpqPdWC6JkXAK_1749818363483_completion_certificate.pdf"
-              target="_blank" rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <!-- TATA Certificates -->
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/TATA.png" alt="Tata" width="100" height="50" />
-            <h3>GenAI Powered Data Analytics Job Simulation</h3>
-          </div>
-          <div class="achievement-back">
-            <p>
-              Completed GenAI Powered Data Analytics Job Simulation on Tata
-              Consultancy Services By Forage
-            </p>
-            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_Sz9FDpqPdWC6JkXAK_1749814921367_completion_certificate.pdf"
-              target="_blank" rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/TATA.png" alt="Tata" width="100" height="50" />
-            <h3>Cybersecurity Analyst Job Simulation</h3>
-          </div>
-          <div class="achievement-back">
-            <p>
-              Completed Cybersecurity Analyst Job Simulation on Tata
-              Consultancy Services By Forage
-            </p>
-            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_Sz9FDpqPdWC6JkXAK_1749811164036_completion_certificate.pdf"
-              target="_blank" rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <!-- Freecodecamp-->
-
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <i class="fa-brands fa-free-code-camp fa-4x"></i>
-            <h3>Responsive Web Design</h3>
-          </div>
-          <div class="achievement-back">
-            <p>
-              Completed Responsive Web Design Certification from freeCodeCamp
-            </p>
-            <a href="https://freecodecamp.org/certification/fcc-658d96f3-24e4-4e4b-90ad-dd7b19d6b2b6/responsive-web-design"
-              target="_blank" rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <!-- Coursera Certificates -->
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="https://cdn.simpleicons.org/coursera" alt="Coursera Logo" width="32" height="32" />
-            <h3>Build a Full Website using WordPress</h3>
-          </div>
-          <div class="achievement-back">
-            <p>Completed Build a Full Website using WordPress on Coursera</p>
-            <a href="https://coursera.org/share/daa1493c593a99888c9d51f65041fb56" target="_blank"
-              rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="https://cdn.simpleicons.org/coursera" alt="Coursera Logo" width="32" height="32" />
-            <h3>Getting Started with Microsoft Excel</h3>
-          </div>
-          <div class="achievement-back">
-            <p>Completed Getting Started with Microsoft Excel on Coursera</p>
-            <a href="https://coursera.org/share/9f37dafdc75cc837b0039d26854e1e72" target="_blank"
-              rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="https://cdn.simpleicons.org/coursera" alt="Coursera Logo" width="32" height="32" />
-            <h3>
-              Use Canva to Create Desktop and Mobile-friendly Web Pages.
-            </h3>
-          </div>
-          <div class="achievement-back">
-            <p>
-              Completed Use Canva to Create Desktop and Mobile-friendly Web
-              Pages on Coursera
-            </p>
-            <a href="https://coursera.org/share/71cc1024e7d1c139f13823665c1c5672" target="_blank"
-              rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <!-- SkillRack Certificate -->
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/skillrack.png" alt="SkillRack" width="100" height="50" />
-            <h3>Data Structure - C</h3>
-          </div>
-          <div class="achievement-back">
-            <p>Completed Data Structure - C on SkillRack platform</p>
-            <a href="https://www.skillrack.com/faces/free/certificate.xhtml?t=cert&id=532674&key=BKL" target="_blank"
-              rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/skillrack.png" alt="SkillRack" width="100" height="50" />
-            <h3>SQL - Basics (Standard)</h3>
-          </div>
-          <div class="achievement-back">
-            <p>Completed SQL - Basics (Standard) on SkillRack platform</p>
-            <a href="https://www.skillrack.com/faces/free/certificate.xhtml?t=cert&id=579321&key=SQF" target="_blank"
-              rel="noopener noreferrer" class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-
-        <!-- Simplilearn Certificates -->
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/Simplilearn.avif" alt="Simplilearn" width="100" height="50" />
-            <h3>Introduction to the Sorting Algorithms</h3>
-          </div>
-          <div class="achievement-back">
-            <p>
-              Completed Introduction to the Sorting Algorithms on Simplilearn
-            </p>
-            <a href="https://simpli.app.link/GsPj5QnvORb" target="_blank" rel="noopener noreferrer"
-              class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-front">
-            <img src="images/Simplilearn.avif" alt="Simplilearn" width="100" height="50" />
-            <h3>Introduction to Cyber Security</h3>
-          </div>
-          <div class="achievement-back">
-            <h3>Introduction to Cyber Security</h3>
-            <p>Completed Cyber Security fundamentals course on Simplilearn</p>
-            <a href="https://simpli.app.link/oRDCMY6cPRb" target="_blank" rel="noopener noreferrer"
-              class="achievement-link">
-              <i class="fas fa-certificate"></i> View Certificate
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <!-- Weather Alert -->
-        <div class="project-card">
-          <div class="project-front">
-            <h3>Weather Alert System</h3>
-            <p>
-              Automated Python system sending real-time weather alerts to WhatsApp Web
-            </p>
-          </div>
-          <div class="project-back">
-            <h3>Weather Alert System</h3>
-            <p>
-              An automated weather alert system sending 4-day forecasts and climate warnings via WhatsApp using Python and open APIs.
-            </p>
-            <a href="https://github.com/sathya3103/weather_alert_python" target="_blank" rel="noopener noreferrer"
-              class="project-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-
-        <!-- Train Reservation System -->
-        <div class="project-card">
-          <div class="project-front">
-            <h3>Train Reservation System</h3>
-            <p>
-              A simple train reservation system built with Java, MySQL, and
-              NetBeans IDE.
-            </p>
-          </div>
-          <div class="project-back">
-            <h3>Train Reservation System</h3>
-            <p>
-              Java application with MySQL database for managing train
-              reservations.
-            </p>
-            <a href="https://github.com/sathya3103/TrainReservationSystem" target="_blank" rel="noopener noreferrer"
-              class="project-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-
-        <!-- Sorting Game -->
-        <div class="project-card">
-          <div class="project-front">
-            <h3>Sorting Game</h3>
-            <p>
-              A timed number-sorting game built with HTML, CSS, and
-              JavaScript.
-            </p>
-          </div>
-          <div class="project-back">
-            <h3>Sorting Game</h3>
-            <p>
-              Interactive web game to test your sorting speed and accuracy.
-            </p>
-            <a href="https://sathya3103.github.io/sort-the-game/" target="_blank" rel="noopener noreferrer"
-              class="project-link">
-              <i class="fas fa-play"></i> Play the Game
-            </a>
-          </div>
-        </div>
-
-        <!-- Study Tracker -->
-        <div class="project-card">
-          <div class="project-front">
-            <h3>Study Tracker</h3>
-            <p>
-              A simple exam to-do tracker web app to manage subject-wise
-              preparation progress.
-            </p>
-          </div>
-          <div class="project-back">
-            <h3>Study Tracker</h3>
-            <p>
-              Web application for tracking study progress across multiple
-              subjects.
-            </p>
-            <div class="project-links">
-              <a href="https://sathya3103.github.io/study-tracker/" target="_blank" rel="noopener noreferrer"
-                class="project-link">
-                <i class="fas fa-external-link-alt"></i> Live Demo
+    <!-- Achievements Section -->
+    <section id="achievements">
+      <div class="container">
+        <h2>Certificate</h2>
+        <div class="achievements-container">
+          <!-- IBM SkillsBuilt Certificate -->
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img src="images/IBM.png" alt="IBM" width="100" height="50" />
+              <h3>Use Generative AI for Software Development</h3>
+            </div>
+            <div class="achievement-back">
+              <h3>Use Generative AI for Software Development</h3>
+              <p>Completed on IBM SkillsBuilt</p>
+              <a
+                href="https://skills.yourlearning.ibm.com/certificate/share/3bfd5fda47ewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI0ODg1NTc1UkVHIiwKICAib2JqZWN0SWQiIDogIk1ETC01MDQiCn0a01008e072-10"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
               </a>
-              <a href="https://github.com/sathya3103/study-tracker" target="_blank" rel="noopener noreferrer"
-                class="project-link">
-                <i class="fab fa-github"></i> Source Code
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img src="images/IBM.png" alt="IBM" width="100" height="50" />
+              <h3>Data Analysis with Python</h3>
+            </div>
+            <div class="achievement-back">
+              <h3>Data Analysis with Python</h3>
+              <p>Completed on IBM via cognitiveclass.ai</p>
+              <a
+                href="https://courses.cognitiveclass.ai/certificates/b601331c2a104b919e7e386880173f79"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img src="images/IBM.png" alt="IBM" width="100" height="50" />
+              <h3>Prompt Engineering for Everyone</h3>
+            </div>
+            <div class="achievement-back">
+              <h3>Prompt Engineering for Everyone</h3>
+              <p>Completed on IBM via cognitiveclass.ai</p>
+              <a
+                href="https://courses.cognitiveclass.ai/certificates/8d71eb31afd745d79f3601f380740493"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Deloitte Certificate -->
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img
+                src="images/deloitte.png"
+                alt="Deloitte"
+                width="100"
+                height="50"
+              />
+              <h3>Data Analytics Job Simulation</h3>
+            </div>
+            <div class="achievement-back">
+              <h3>Data Analytics Job Simulation</h3>
+              <p>Completed on Deloitte</p>
+              <a
+                href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Sz9FDpqPdWC6JkXAK_1749571516082_completion_certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+          <!-- Accenture Certificate -->
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img
+                src="https://cdn.simpleicons.org/accenture"
+                alt="Accenture Logo"
+                width="32"
+                height="32"
+              />
+              <h3>Software Engineering Job Simulation</h3>
+            </div>
+            <div class="achievement-back">
+              <h3>Software Engineering Job Simulation</h3>
+              <p>Completed on Forage(Accenture)</p>
+              <a
+                href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_Sz9FDpqPdWC6JkXAK_1749818363483_completion_certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- TATA Certificates -->
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img src="images/TATA.png" alt="Tata" width="100" height="50" />
+              <h3>GenAI Powered Data Analytics Job Simulation</h3>
+            </div>
+            <div class="achievement-back">
+              <p>
+                Completed GenAI Powered Data Analytics Job Simulation on Tata
+                Consultancy Services By Forage
+              </p>
+              <a
+                href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_Sz9FDpqPdWC6JkXAK_1749814921367_completion_certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img src="images/TATA.png" alt="Tata" width="100" height="50" />
+              <h3>Cybersecurity Analyst Job Simulation</h3>
+            </div>
+            <div class="achievement-back">
+              <p>
+                Completed Cybersecurity Analyst Job Simulation on Tata
+                Consultancy Services By Forage
+              </p>
+              <a
+                href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_Sz9FDpqPdWC6JkXAK_1749811164036_completion_certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Freecodecamp-->
+
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <i class="fa-brands fa-free-code-camp fa-4x"></i>
+              <h3>Responsive Web Design</h3>
+            </div>
+            <div class="achievement-back">
+              <p>
+                Completed Responsive Web Design Certification from freeCodeCamp
+              </p>
+              <a
+                href="https://freecodecamp.org/certification/fcc-658d96f3-24e4-4e4b-90ad-dd7b19d6b2b6/responsive-web-design"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Coursera Certificates -->
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img
+                src="https://cdn.simpleicons.org/coursera"
+                alt="Coursera Logo"
+                width="32"
+                height="32"
+              />
+              <h3>Build a Full Website using WordPress</h3>
+            </div>
+            <div class="achievement-back">
+              <p>Completed Build a Full Website using WordPress on Coursera</p>
+              <a
+                href="https://coursera.org/share/daa1493c593a99888c9d51f65041fb56"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img
+                src="https://cdn.simpleicons.org/coursera"
+                alt="Coursera Logo"
+                width="32"
+                height="32"
+              />
+              <h3>Getting Started with Microsoft Excel</h3>
+            </div>
+            <div class="achievement-back">
+              <p>Completed Getting Started with Microsoft Excel on Coursera</p>
+              <a
+                href="https://coursera.org/share/9f37dafdc75cc837b0039d26854e1e72"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img
+                src="https://cdn.simpleicons.org/coursera"
+                alt="Coursera Logo"
+                width="32"
+                height="32"
+              />
+              <h3>
+                Use Canva to Create Desktop and Mobile-friendly Web Pages.
+              </h3>
+            </div>
+            <div class="achievement-back">
+              <p>
+                Completed Use Canva to Create Desktop and Mobile-friendly Web
+                Pages on Coursera
+              </p>
+              <a
+                href="https://coursera.org/share/71cc1024e7d1c139f13823665c1c5672"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- SkillRack Certificate -->
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img
+                src="images/skillrack.png"
+                alt="SkillRack"
+                width="100"
+                height="50"
+              />
+              <h3>Data Structure - C</h3>
+            </div>
+            <div class="achievement-back">
+              <p>Completed Data Structure - C on SkillRack platform</p>
+              <a
+                href="https://www.skillrack.com/faces/free/certificate.xhtml?t=cert&id=532674&key=BKL"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img
+                src="images/skillrack.png"
+                alt="SkillRack"
+                width="100"
+                height="50"
+              />
+              <h3>SQL - Basics (Standard)</h3>
+            </div>
+            <div class="achievement-back">
+              <p>Completed SQL - Basics (Standard) on SkillRack platform</p>
+              <a
+                href="https://www.skillrack.com/faces/free/certificate.xhtml?t=cert&id=579321&key=SQF"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Simplilearn Certificates -->
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img
+                src="images/Simplilearn.avif"
+                alt="Simplilearn"
+                width="100"
+                height="50"
+              />
+              <h3>Introduction to the Sorting Algorithms</h3>
+            </div>
+            <div class="achievement-back">
+              <p>
+                Completed Introduction to the Sorting Algorithms on Simplilearn
+              </p>
+              <a
+                href="https://simpli.app.link/GsPj5QnvORb"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-front">
+              <img
+                src="images/Simplilearn.avif"
+                alt="Simplilearn"
+                width="100"
+                height="50"
+              />
+              <h3>Introduction to Cyber Security</h3>
+            </div>
+            <div class="achievement-back">
+              <h3>Introduction to Cyber Security</h3>
+              <p>Completed Cyber Security fundamentals course on Simplilearn</p>
+              <a
+                href="https://simpli.app.link/oRDCMY6cPRb"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="achievement-link"
+              >
+                <i class="fas fa-certificate"></i> View Certificate
               </a>
             </div>
           </div>
         </div>
-        <!-- UI/UX DESIGN -->
-        <div class="project-card">
-          <div class="project-front">
-            <h3>Login Page</h3>
-            <p>
-              Designed a modern and visually engaging Login/Register user
-              interface using Figma
-            </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <!-- Weather Alert -->
+          <div class="project-card">
+            <div class="project-front">
+              <h3>Weather Alert System</h3>
+              <p>
+                Automated Python system sending real-time weather alerts to
+                WhatsApp Web
+              </p>
+            </div>
+            <div class="project-back">
+              <h3>Weather Alert System</h3>
+              <p>
+                An automated weather alert system sending 4-day forecasts and
+                climate warnings via WhatsApp using Python and open APIs.
+              </p>
+              <a
+                href="https://github.com/sathya3103/weather_alert_python"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
           </div>
-          <div class="project-back">
-            <h3>Login Page</h3>
-            <p>
-              This design focuses on clean aesthetics, user-friendly form
-              layouts, and seamless user flow between the Home, Login, and
-              Register screens
-            </p>
-            <a href="https://www.figma.com/proto/Gyic0Pel0bufeTAuZJEBCC/Untitled?node-id=4-6&p=f&t=QDOWMBniFUzRWvoj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
-              target="_blank" rel="noopener noreferrer" class="project-link">
-              <i class="fas fa-external-link-alt"></i> View on Figma
-            </a>
+
+          <!-- Train Reservation System -->
+          <div class="project-card">
+            <div class="project-front">
+              <h3>Train Reservation System</h3>
+              <p>
+                A simple train reservation system built with Java, MySQL, and
+                NetBeans IDE.
+              </p>
+            </div>
+            <div class="project-back">
+              <h3>Train Reservation System</h3>
+              <p>
+                Java application with MySQL database for managing train
+                reservations.
+              </p>
+              <a
+                href="https://github.com/sathya3103/TrainReservationSystem"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="project-front">
-            <h3>Portfolio</h3>
-            <p>
-              Designed a modern and visually engaging portfolio website
-              using Figma
-            </p>
+
+          <!-- Sorting Game -->
+          <div class="project-card">
+            <div class="project-front">
+              <h3>Sorting Game</h3>
+              <p>
+                A timed number-sorting game built with HTML, CSS, and
+                JavaScript.
+              </p>
+            </div>
+            <div class="project-back">
+              <h3>Sorting Game</h3>
+              <p>
+                Interactive web game to test your sorting speed and accuracy.
+              </p>
+              <a
+                href="https://sathya3103.github.io/sort-the-game/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                <i class="fas fa-play"></i> Play the Game
+              </a>
+            </div>
           </div>
-          <div class="project-back">
-            <h3>Portfolio</h3>
-            <p>
-              This design inspired by brutalist and minimal design styles, this portfolio showcases my personality and
-              projects with clarity and boldness.
-            </p>
-            <a href="https://www.figma.com/proto/OpZnaKohdEjxfrpeAudayw/Portfolio?node-id=1-3&p=f&t=d4WhwOP9ZdNN1KI3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3"
-              target="_blank" rel="noopener noreferrer" class="project-link">
-              <i class="fas fa-external-link-alt"></i> View on Figma
-            </a>
+
+          <!-- Study Tracker -->
+          <div class="project-card">
+            <div class="project-front">
+              <h3>Study Tracker</h3>
+              <p>
+                A simple exam to-do tracker web app to manage subject-wise
+                preparation progress.
+              </p>
+            </div>
+            <div class="project-back">
+              <h3>Study Tracker</h3>
+              <p>
+                Web application for tracking study progress across multiple
+                subjects.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://sathya3103.github.io/study-tracker/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a
+                  href="https://github.com/sathya3103/study-tracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- UI/UX DESIGN -->
+          <div class="project-card">
+            <div class="project-front">
+              <h3>Login Page</h3>
+              <p>
+                Designed a modern and visually engaging Login/Register user
+                interface using Figma
+              </p>
+            </div>
+            <div class="project-back">
+              <h3>Login Page</h3>
+              <p>
+                This design focuses on clean aesthetics, user-friendly form
+                layouts, and seamless user flow between the Home, Login, and
+                Register screens
+              </p>
+              <a
+                href="https://www.figma.com/proto/Gyic0Pel0bufeTAuZJEBCC/Untitled?node-id=4-6&p=f&t=QDOWMBniFUzRWvoj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> View on Figma
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-front">
+              <h3>Portfolio</h3>
+              <p>
+                Designed a modern and visually engaging portfolio website using
+                Figma
+              </p>
+            </div>
+            <div class="project-back">
+              <h3>Portfolio</h3>
+              <p>
+                This design inspired by brutalist and minimal design styles,
+                this portfolio showcases my personality and projects with
+                clarity and boldness.
+              </p>
+              <a
+                href="https://www.figma.com/proto/OpZnaKohdEjxfrpeAudayw/Portfolio?node-id=1-3&p=f&t=d4WhwOP9ZdNN1KI3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> View on Figma
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-<!--Leetcode-->
-  <section class="stats-section">
-    <h2>Leetcode Stats</h2>
-    <a href="https://leetcode.com/u/Sathyanesar_E" target="_blank" rel="noopener noreferrer">
-      <img
-        src="https://leetcode-stats.vercel.app/api?username=Sathyanesar_E&theme=dark"
-        alt="LeetCode Stats"
-        class="leet-badge"
-      />
-    </a>
-  </section>
-
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <div class="contact-container">
-        <div class="contact-info">
-          <p>Connect with me:</p>
-          <div class="social-icons">
-            <a href="mailto:nesarsathya@gmail.com" target="_blank" title="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://github.com/sathya3103" target="_blank" rel="noopener noreferrer" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/sathyanesar" target="_blank" rel="noopener noreferrer"
-              title="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/_sathyeah/" target="_blank" rel="noopener noreferrer" title="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <p>Connect with me:</p>
+            <div class="social-icons">
+              <a
+                href="mailto:nesarsathya@gmail.com"
+                target="_blank"
+                title="Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://github.com/sathya3103"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sathyanesar"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/_sathyeah/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
           </div>
+          <form
+            id="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-form"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="dc19421d-fa76-4423-b5e1-5aeb6d755352"
+            />
+
+            <input type="text" name="name" placeholder="Your name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your e-mail Id"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Message here!!"
+              required
+            ></textarea>
+
+            <!-- Honeypot Spam Protection -->
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://sathya3103.github.io/portfolio/thankyou.html"
+            />
+
+            <button type="submit">Submit Form</button>
+          </form>
+
+          <div id="result"></div>
         </div>
-        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-          <input type="hidden" name="access_key" value="dc19421d-fa76-4423-b5e1-5aeb6d755352" />
-
-          <input type="text" name="name" placeholder="Your name" required />
-          <input type="email" name="email" placeholder="Your e-mail Id" required />
-          <textarea name="message" placeholder="Message here!!" required></textarea>
-
-          <!-- Honeypot Spam Protection -->
-          <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
-
-          <input type="hidden" name="redirect" value="https://sathya3103.github.io/portfolio/thankyou.html" />
-
-          <button type="submit">Submit Form</button>
-        </form>
-
-        <div id="result"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 E. Sathyanesar. All Rights Reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 E. Sathyanesar. All Rights Reserved.</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
