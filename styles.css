@@ -743,6 +743,8 @@ p {
 }
 
 .project-front {
+  justify-content: flex-start;
+  padding-top: 1.5rem; 
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   transform: rotateY(0deg);
@@ -798,6 +800,25 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-thumbnail img {
+  transform: scale(1.05);
 }
 
 /* Contact Section */
