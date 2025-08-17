@@ -376,7 +376,7 @@ strong {
 
   /* Ensure all text is centered on mobile */
   .hero-text-container * {
-    text-align: center !important;
+    text-align: center;
   }
 }
 
