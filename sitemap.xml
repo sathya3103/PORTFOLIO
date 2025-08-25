@@ -1,40 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Homepage -->
   <url>
     <loc>https://sathya3103.github.io/PORTFOLIO/</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-08-25</lastmod>
     <priority>1.0</priority>
   </url>
-
-  <!-- About Page -->
-  <url>
-    <loc>https://sathya3103.github.io/PORTFOLIO/about.html</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Projects Page -->
   <url>
     <loc>https://sathya3103.github.io/PORTFOLIO/projects.html</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-08-25</lastmod>
     <priority>0.8</priority>
   </url>
-
-  <!-- Contact Page -->
   <url>
-    <loc>https://sathya3103.github.io/PORTFOLIO/contact.html</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://sathya3103.github.io/PORTFOLIO/about.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Resume Page (if you want it indexed) -->
-  <url>
+</urlset>  <url>
     <loc>https://sathya3103.github.io/PORTFOLIO/Sathyanesar_E_Resume.pdf</loc>
     <lastmod>2025-08-23</lastmod>
     <changefreq>yearly</changefreq>
