@@ -318,5 +318,5 @@ window.addEventListener("load", function () {
       content.classList.add("show");
       preloader.style.display = "none";
     }, 500); // match CSS fade
-  }, 2000); // ⬅️ 3 seconds
+  }, 2000); // ⬅️ 2 seconds
 });
