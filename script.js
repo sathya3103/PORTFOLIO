@@ -307,13 +307,16 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
   const content = document.getElementById("content");
 
-  // Simulate loading time
+  // Force preloader to stay visible for 3 seconds
   setTimeout(() => {
     preloader.classList.add("hidden");
-    content.style.display = "block";
-  }, 1000); // Adjust time as needed
+    setTimeout(() => {
+      content.classList.add("show");
+      preloader.style.display = "none";
+    }, 500); // match CSS fade
+  }, 2000); // ⬅️ 3 seconds
 });
