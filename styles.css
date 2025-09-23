@@ -434,22 +434,20 @@ h1 > span > span {
 }
 
 @keyframes animateWords {
-  15% {
+  25% {
     transform: translateY(0);
   }
-  35% {
+  45% {
     transform: translateY(-100%);
   }
-  55% {
+  65% {
     transform: translateY(-200%);
-  }
-  75% {
-    transform: translateY(-300%);
   }
   100% {
     transform: translateY(0);
   }
 }
+
 
 /* About Text Section */
 .about-text {
@@ -526,7 +524,7 @@ strong {
   .hero-flex-container {
     flex-direction: column;
     text-align: center;
-    gap: 2rem;
+    gap: 0.1rem;
   }
 
   .hero-text-container {
@@ -534,7 +532,7 @@ strong {
   }
 
   .hero-text-container h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .role {
@@ -545,10 +543,11 @@ strong {
   .profile-img {
     width: 250px;
     height: 250px;
+    margin-top: 8rem;
   }
 
   .about-text {
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
   }
 
@@ -560,10 +559,6 @@ strong {
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
-    justify-content: center;
-  }
-
-  .social-icons {
     justify-content: center;
   }
 }
