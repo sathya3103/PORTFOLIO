@@ -109,12 +109,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // ======================
-  // Smooth Navigation
+  // IMPROVED: Smooth Navigation
   // ======================
   const setupSmoothNavigation = () => {
-    const smoothScrollTo = (targetY, duration = 300) => {
-      if (isMobile() || prefersReducedMotion) {
-        window.scrollTo(0, targetY);
+    const smoothScrollTo = (targetY, duration = 800) => {
+      // Respect reduced motion preference
+      if (prefersReducedMotion || isMobile()) {
+        window.scrollTo({ top: targetY, behavior: 'smooth' });
         return;
       }
 
@@ -122,12 +123,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const distance = targetY - startY;
       const startTime = performance.now();
 
+      // Easing function for smooth acceleration and deceleration
+      const easeInOutCubic = (t) => {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      };
+
       const scroll = (currentTime) => {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
-        const ease = 1 - Math.pow(1 - progress, 3);
+        const ease = easeInOutCubic(progress);
+        
         window.scrollTo(0, startY + distance * ease);
-        if (progress < 1) requestAnimationFrame(scroll);
+        
+        if (progress < 1) {
+          requestAnimationFrame(scroll);
+        }
       };
 
       requestAnimationFrame(scroll);
@@ -141,20 +151,26 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      if (e.type === "click") {
+      // Prevent default only for anchor links
+      if (targetId.startsWith("#")) {
         e.preventDefault();
-      }
 
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
-        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-        
-        smoothScrollTo(targetPosition, isMobile() ? 200 : 300);
-
-        // Update URL without pushing to history for better UX
-        if (targetId.startsWith("#")) {
-          window.history.replaceState(null, null, targetId);
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
+          const extraOffset = 20; // Additional offset for better visibility
+          const targetPosition = targetElement.getBoundingClientRect().top + 
+                               window.pageYOffset - 
+                               navbarHeight - 
+                               extraOffset;
+          
+          // Add active state to clicked nav item
+          document.querySelectorAll('nav a').forEach(link => {
+            link.classList.remove('active');
+          });
+          e.currentTarget.classList.add('active');
+          
+          smoothScrollTo(targetPosition, isMobile() ? 600 : 800);
         }
       }
     };
@@ -164,8 +180,39 @@ document.addEventListener("DOMContentLoaded", () => {
       if (anchor.getAttribute("href").startsWith("#")) {
         anchor.addEventListener("click", handleNavClick);
       }
-      anchor.addEventListener("touchend", handleNavClick, { passive: true });
     });
+
+    // Add scroll spy to highlight active section
+    const setupScrollSpy = () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+      
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -70% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    };
+
+    setupScrollSpy();
   };
 
   // ======================
@@ -446,19 +493,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     window.addEventListener("resize", debouncedResizeHandler, { passive: true });
-
-    // Service Worker Registration (optional)
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(registration => {
-            console.log('SW registered: ', registration);
-          })
-          .catch(registrationError => {
-            console.log('SW registration failed: ', registrationError);
-          });
-      });
-    }
   };
 
   // Start initialization
