@@ -1302,6 +1302,10 @@ footer {
     text-align: center;
   }
 
+  .role>span{
+    font-size: 1.7rem;
+  }
+
   .profile-img {
     width: 250px;
     height: 250px;
@@ -1437,7 +1441,7 @@ footer {
   }
 
   .role {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .profile-img {
