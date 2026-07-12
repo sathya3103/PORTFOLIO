@@ -109,9 +109,11 @@ body {
   0% {
     transform: rotateX(0deg);
   }
+
   50% {
     transform: rotateX(180deg);
   }
+
   100% {
     transform: rotateX(180deg);
   }
@@ -209,10 +211,12 @@ body {
   0% {
     opacity: 1;
   }
+
   25%,
   30% {
     opacity: 0;
   }
+
   40%,
   100% {
     opacity: 1;
@@ -246,15 +250,18 @@ body {
     height: 0;
     top: 35px;
   }
+
   50% {
     height: 0;
     top: 45px;
   }
+
   60%,
   85% {
     height: 35px;
     top: 8px;
   }
+
   100% {
     height: 0;
     top: 8px;
@@ -262,14 +269,17 @@ body {
 }
 
 @keyframes sandStream2 {
+
   0%,
   50% {
     opacity: 0;
   }
+
   51%,
   90% {
     opacity: 1;
   }
+
   91%,
   100% {
     opacity: 0;
@@ -299,11 +309,13 @@ body {
 }
 
 @keyframes sandFillup {
+
   0%,
   60% {
     opacity: 0;
     height: 0;
   }
+
   100% {
     opacity: 1;
     height: 17px;
@@ -318,6 +330,7 @@ body {
     width: 38px;
     left: 6px;
   }
+
   1%,
   24% {
     opacity: 1;
@@ -326,6 +339,7 @@ body {
     width: 38px;
     left: 6px;
   }
+
   25%,
   50% {
     opacity: 1;
@@ -334,6 +348,7 @@ body {
     width: 38px;
     left: 6px;
   }
+
   90% {
     opacity: 1;
     top: 41px;
@@ -425,18 +440,28 @@ h2::after {
   text-align: left;
 }
 
-.profile-img {
+.profile-img-wrapper {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  object-fit: cover;
+  overflow: hidden;
+  position: relative;
   transition: transform 0.3s ease;
 }
 
-.profile-img:hover {
+.profile-img-wrapper:hover {
   transform: scale(1.05);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
 }
 
 .hero-text-container h1 {
@@ -461,7 +486,7 @@ h2::after {
   min-height: 2.5rem;
 }
 
-.role > span {
+.role>span {
   position: relative;
   display: inline-block;
   color: #d076fd;
@@ -470,7 +495,7 @@ h2::after {
   overflow: hidden;
 }
 
-.role > span > span {
+.role>span>span {
   display: block;
   animation: animateWords 10s infinite ease;
   white-space: nowrap;
@@ -480,12 +505,15 @@ h2::after {
   25% {
     transform: translateY(0);
   }
+
   45% {
     transform: translateY(-100%);
   }
+
   65% {
     transform: translateY(-200%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -710,12 +738,12 @@ nav li:hover::after {
 
 #skills .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
   padding: 1rem 0;
 }
 
-#skills .container > h2 {
+#skills .container>h2 {
   grid-column: 1 / -1;
   text-align: center;
   margin-bottom: 2rem;
@@ -724,14 +752,14 @@ nav li:hover::after {
 .skills-category {
   background: transparent;
   border: none;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .skills-category h3,
 .category-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   text-align: center;
   font-weight: 600;
 }
@@ -777,7 +805,7 @@ nav li:hover::after {
 
 .category-title,
 .skills-container {
-  padding: 15px;
+  padding: 12px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 12px;
@@ -865,7 +893,8 @@ nav li:hover::after {
   flex-wrap: wrap;
 }
 
-.date, .location {
+.date,
+.location {
   color: var(--text-muted);
   font-size: 0.9rem;
   display: flex;
@@ -1244,7 +1273,7 @@ footer {
   .hero-text-container h1 {
     font-size: 3rem;
   }
-  
+
   #skills .container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1302,11 +1331,11 @@ footer {
     text-align: center;
   }
 
-  .role>span{
+  .role>span {
     font-size: 1.7rem;
   }
 
-  .profile-img {
+  .profile-img-wrapper {
     width: 250px;
     height: 250px;
   }
@@ -1363,33 +1392,33 @@ footer {
     text-align: center;
     gap: 1rem;
   }
-  
+
   .experience-icon {
     align-self: center;
   }
-  
+
   .experience-title {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .company {
     text-align: center;
     width: 100%;
   }
-  
+
   .experience-meta {
     justify-content: center;
     width: 100%;
   }
-  
+
   .experience-card {
     padding: 2rem 1.5rem;
     margin: 0 1rem;
   }
-  
+
   .experience-title h3 {
     font-size: 1.4rem;
     text-align: center;
@@ -1444,7 +1473,7 @@ footer {
     font-size: 1rem;
   }
 
-  .profile-img {
+  .profile-img-wrapper {
     width: 200px;
     height: 200px;
   }
@@ -1457,17 +1486,18 @@ footer {
   .experience-card {
     padding: 1.5rem 1rem;
   }
-  
+
   .experience-meta {
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
   }
-  
-  .date, .location {
+
+  .date,
+  .location {
     font-size: 0.85rem;
   }
-  
+
   .company {
     font-size: 1rem;
   }
@@ -1502,6 +1532,7 @@ footer {
     padding: 0 15px;
   }
 }
+
 /* Add to your styles.css for smooth navigation enhancements */
 nav a.active {
   background: rgba(255, 255, 255, 0.3) !important;
@@ -1519,7 +1550,7 @@ html {
   html {
     scroll-behavior: auto;
   }
-  
+
   * {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
