@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
-          const extraOffset = 20; // Additional offset for better visibility
+          const extraOffset = -15; // Adjusted offset to minimize gap below navbar
           const targetPosition = targetElement.getBoundingClientRect().top + 
                                window.pageYOffset - 
                                navbarHeight - 
@@ -194,6 +194,12 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       const observer = new IntersectionObserver((entries) => {
+        // Skip spy when near the top of the page (hero section)
+        if (window.scrollY < 100) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          return;
+        }
+
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             const id = entry.target.getAttribute('id');
@@ -210,6 +216,13 @@ document.addEventListener("DOMContentLoaded", () => {
       sections.forEach(section => {
         observer.observe(section);
       });
+
+      // Clear active links on scroll to top
+      window.addEventListener('scroll', () => {
+        if (window.scrollY < 100) {
+          navLinks.forEach(link => link.classList.remove('active'));
+        }
+      }, { passive: true });
     };
 
     setupScrollSpy();
